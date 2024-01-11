@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/new/proj/proj/wsgi.py"
+        "dest": "VedaSoul/wsgi.py"
       }
     ]
   }
