@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&q#m$&w#o0#r7d(8j9oj7eh81r06lg#9r8r4afi=(&tyzxw@!(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']
 
 
 # Application definition
@@ -117,8 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-STATIC_DIRS=(os.path.join(BASE_DIR,'static'),)
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles','static')
+STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -128,9 +128,9 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 # Email
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_POST = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER ='klaxay0505@gmail.com'
-EMAIL_HOST_PASSWORD ='tlig dcti nhhb ewae'
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_POST = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER ='klaxay0505@gmail.com'
+# EMAIL_HOST_PASSWORD ='tlig dcti nhhb ewae'
